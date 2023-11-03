@@ -2,7 +2,7 @@
 
 ## flex 사용하여 배치하기
 ```sh
-
+  <img src="./image/flex.png">
 ```
 
 ## section 영역 만들기
