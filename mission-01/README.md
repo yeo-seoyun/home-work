@@ -2,8 +2,9 @@
 
 ## flex 사용하여 배치하기
 ```sh
-  <img src="./image/flex.png">
+  ![flex](https://github.com/yeo-seoyun/home-work/assets/128555982/76ff9e10-6738-498a-9046-43e5defc98b3)
 ```
+
 
 ## section 영역 만들기
 ```sh
