@@ -5,6 +5,25 @@ a {
   text-decoration: none;
 }
 
+/* 숨김 콘텐츠 */
+.sr-only,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:root {
+  --point-color: #24388D;
+}
+
 body {
   font-family: 'SUIT Variable', Arial, Helvetica, sans-serif;
   width: 100%;
@@ -29,6 +48,16 @@ header {
   display: flex;
   flex-flow: row nowrap;
 }
+.nav li {
+  margin-left: 8px;
+  color: var(--point-color);
+}
+.nav li.active {
+  font-weight: 700;
+}
+.nav li:active {
+  font-weight: 700;
+}
 
 main {
   width: 100%;
@@ -38,7 +67,6 @@ main {
   position: relative;
 }
 section {
-  background-color: #fff;
   width: 540px;
   text-align: center;
   position: absolute;
@@ -47,7 +75,92 @@ section {
   transform: translate(-50%, -50%);
 }
 
+.login-title {
+  padding-bottom: 100px;
+  color: #fff;
+}
+.login-title h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+.login-title p {
+  font-size: 18px;
+}
+.login-title span {
+  font-size: 12px;
+}
+
 .login {
   display: flex;
   flex-flow: column nowrap;
+  border: 0;
+  text-align: start;
+  color: #fff;
+  margin: auto;
+}
+.login .login-box {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 30px;
+}
+.login-box input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+.login-box input:focus {
+  outline: 0;
+  border-bottom: 2px solid #fff;
+}
+.check-box {
+  font-size: 12px;
+  padding-top: 14px;
+}
+
+.login-button {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  justify-content: space-around;
+}
+.login-button a {
+  width: 250px;
+  height: 48px;
+  margin-top: 70px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 48px;
+  position: relative;
+}
+
+.login-btn {
+  color: var(--point-color);
+  background: #fff;
+}
+.login-btn::after {
+  position: absolute;
+  content: '→';
+  right: 20px;
+  color: var(--point-color);
+}
+
+.sign-btn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.sign-btn::after {
+  position: absolute;
+  content: '→';
+  right: 20px;
+  color: #fff;
+}
+
+.login-button.active {
+  color: var(--point-color);
+  font-weight: 700;
+}
+.login-button a:active {
+  color: var(--point-color);
+  font-weight: 700;
+  background: #fff;
 }

@@ -14,30 +14,44 @@
     <div class="header">
       <h2><img src="images/ediya-logo.png" alt="이디야 로고" /></h2>
       <ul class="nav">
-        <li>이디야 디자인</li>
-        <li>로그인</li>
-        <li>회원가입</li>
-        <li>이디야 음료</li>
-        <li>이디야 뉴스</li>
-        <li>매장찾기</li>
+        <li><a href="none">이디야 디자인</a></li>
+        <li class="active"><a href="none">로그인</a></li>
+        <li><a href="none">회원가입</a></li>
+        <li><a href="none">이디야 음료</a></li>
+        <li><a href="none">이디야 뉴스</a></li>
+        <li><a href="none">매장찾기</a></li>
       </ul>
     </div>
   </header>
 
   <main>
     <section>
-      <h2>로그인</h2>
-      <p>Welcome, Ediya Coffee</p>
-      <span>이디야 커피에 오신 것을 환영합니다.</span>
+      <h2 class="sr-only">로그인 화면</h2>
+      <div class="login-title">
+        <h2>로그인</h2>
+        <p>Welcome, Ediya Coffee</p>
+        <span>이디야 커피에 오신 것을 환영합니다.</span>
+      </div>
 
       <fieldset class="login">
-        <input type="email" value="" />
-        <input type="password" value="" placeholder="패스워드" />
+        <legend>로그인</legend>
+        <div class="email-box login-box">
+          <label for="email">이메일</label>
+          <input type="email" value="" />
+        </div>
+        <div class="pw-box login-box">
+          <label for="pw">패스워드</label>
+          <input type="password" value="" />
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="email-check" id="check" />
+          <label for="check">이메일 저장</label>
+        </div>
       </fieldset>
 
-      <div class="sing">
-        <a href="/">로그인</a>
-        <a href="/">회원가입</a>
+      <div class="login-button">
+        <a href="/" class="login-btn active">로그인</a>
+        <a href="/" class="sign-btn">회원가입</a>
       </div>
     </section>
   </main>
