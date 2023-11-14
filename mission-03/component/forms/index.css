@@ -1,0 +1,63 @@
+@import './../../css/common.css';
+
+
+/* 셀렉트 */
+select {
+  border: 1px solid #757575;
+  border-radius: 5px;
+  color: #757575;
+  display: flex;
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  /* 화살표 지우기 */
+  appearance:none;
+  background: url(./../../images/bi_caret-down-fill.svg) no-repeat 90px;
+}
+.select {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 110px;
+  height: 40px;
+  line-height: 1.5;
+}
+.select .icon-global {
+  position: absolute;
+  left: 5px;
+}
+
+
+/* 버튼 */
+.red-button {
+  background: #E50914;
+  color: #fff;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+/* 이메일 인풋 */
+.email-add {
+  /* display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center; */
+
+  & input {
+    width: 540px;
+    padding: 18px 20px;
+  }
+
+  & .free-coupon {
+    background: #E50914;
+    width: 180px; 
+    padding: 18px 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+}

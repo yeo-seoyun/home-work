@@ -1,0 +1,21 @@
+.header {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px;
+}
+
+.header-inner {
+  width: 1280px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.header-form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 190px;
+}
