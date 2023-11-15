@@ -1,19 +1,12 @@
 @import './css/common.css';
 @import './css/reset.css';
 
-/* 컴포넌트 CSS */
-@import './component/header/index.css';
-@import './component/forms/index.css';
-@import './component/navigation/index.css';
-
-
-
 /* 메인 영역 */
 body {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.95);
-  background-image: url(./../images/background.png);
+  background-image: url(./../mission-03/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,30 +23,16 @@ body {
 }
 
 .main-title {
+  background-color: lightpink;
   width: 518px;
-
-  & h1 {
-    font-size: 50px;   
-    margin-bottom: 30px;
-  }
-
-  & h3 {
-    font-size: 18px;   
-    margin-bottom: 30px;
-  }
-
-  & h4 {
-    width: 350px;
-    margin: auto;
-    font-size: 16px;   
-    margin-bottom: 30px;
-    text-align: start;
-  }
-
 }
 
-/* .email-add {
+
+.main-email {
   background-color: lightskyblue;
+}
+.email-input-button {
   display: flex;
   flex-flow: row nowrap;
-} */
+
+}
