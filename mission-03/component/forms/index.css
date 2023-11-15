@@ -11,7 +11,7 @@ select {
   width: 110px;
   height: 40px;
   /* 화살표 지우기 */
-  appearance:none;
+  appearance: none;
   background: url(./../../images/bi_caret-down-fill.svg) no-repeat 90px;
 }
 .select {
@@ -30,7 +30,7 @@ select {
 
 
 /* 버튼 */
-.red-button {
+.login-button {
   background: #E50914;
   color: #fff;
   width: 70px;
@@ -40,24 +40,21 @@ select {
   text-align: center;
 }
 
+.free-button {
+  background: #E50914;
+  color: #fff;
+  width: 210px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* 이메일 인풋 */
-.email-add {
-  /* display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center; */
-
-  & input {
-    width: 540px;
-    padding: 18px 20px;
-  }
-
-  & .free-coupon {
-    background: #E50914;
-    width: 180px; 
-    padding: 18px 20px;
-    text-align: center;
-    font-weight: 700;
-  }
+.email-add input {
+  width: 540px;
+  padding: 18px 20px;
 }
