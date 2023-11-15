@@ -1,0 +1,46 @@
+.footer {
+  width: 100%;
+  background-color: #010101;
+  color: #f0f0f0;
+}
+.footer-inner {
+  width: 1280px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  margin: auto;
+}
+
+.question {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 1.5px;
+}
+.question em {
+  font-style: normal;
+}
+
+.footer-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 14px;
+  color: #ACACAC;
+}
+.footer-navigation li {
+  padding: 0 50px 5px 0;
+}
+
+.footer-add {
+  /* background-color: lightskyblue; */
+}
+address {
+  font-style: normal;
+}
+.address {
+  display: flex;
+  flex-flow: column nowrap;
+}
