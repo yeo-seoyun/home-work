@@ -40,21 +40,27 @@ select {
   text-align: center;
 }
 
+
+/* 이메일 인풋 */
+.email-add {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.email-add input {
+  width: 540px;
+  padding: 18px 20px;
+}
 .free-button {
   background: #E50914;
   color: #fff;
   width: 210px;
   height: 60px;
-  border-radius: 5px;
+  border: 0;
+  border-radius: 2px;
+  font-size: 16px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-}
-
-
-/* 이메일 인풋 */
-.email-add input {
-  width: 540px;
-  padding: 18px 20px;
+  column-gap: 6px;
 }
