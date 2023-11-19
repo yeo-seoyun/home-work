@@ -13,34 +13,57 @@ body {
 }
   
 .main {
-  background-color: lightgreen;
   width: 80%;
   color: #fff;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin: auto;
-  padding: 57px 240.5px;
+  padding: 150px 240.5px;
   text-align: center;
 }
 
 .main-title {
-  background-color: lightpink;
-  width: 518px;
+  width: 600px;
+
+  & p {
+    padding: 10px;
+  }
+}
+.main-title-large *{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+.main-title-midium {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.01px;
+}
+.main-title-small {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.008px;
 }
 
-
 .main-email {
-  background-color: lightsalmon;
-  width: 400px;
+  width: 600px;
 }
 .email-input-button {
   display: flex;
   flex-flow: row nowrap;
 }
 .promotion {
-  display: block;
-  
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.008px;
+  padding-top: 10px;
 }
 
 
