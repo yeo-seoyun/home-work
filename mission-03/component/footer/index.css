@@ -1,10 +1,11 @@
-.footer {
+footer {
   width: 100%;
+  color: #ACACAC;
   background-color: #010101;
-  color: #f0f0f0;
 }
+
 .footer-inner {
-  width: 1280px;
+  width: 80%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -16,31 +17,54 @@
   display: flex;
   flex-flow: row nowrap;
   column-gap: 1.5px;
-}
-.question em {
-  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+
+  & em {
+    font-style: normal;
+  }
 }
 
 .footer-navigation {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-size: 14px;
-  color: #ACACAC;
-}
-.footer-navigation li {
-  padding: 0 50px 5px 0;
+  letter-spacing: -0.01px;
+
+  & li {
+    padding: 0 50px 5px 0;
+  }
 }
 
 .footer-add {
-  /* background-color: lightskyblue; */
-}
-address {
-  font-style: normal;
+  padding: 30px 0;
 }
 .address {
+  font-style: normal;
   display: flex;
   flex-flow: column nowrap;
+}
+
+/* 모바일 디바이스 */
+@media (max-width: 768px) {
+  .question {
+    display: flex;
+    flex-flow: column nowrap;
+    column-gap: 1.5px;
+  }
+
+  .footer-navigation {
+    grid-template-columns: repeat(2, 1fr);
+  
+    & li {
+      padding: 0 50px 15px 0;
+    }
+  }
+
+  .address {
+    flex-flow: column wrap;
+  }
 }

@@ -5,14 +5,16 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.95);
   background-image: url(./../mission-03/images/background.png);
+  background-color: rgba(0, 0, 0, 0.95);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
-
+  
 .main {
-  width: 1280px;
+  background-color: lightgreen;
+  width: 80%;
   color: #fff;
   display: flex;
   flex-flow: column nowrap;
@@ -29,10 +31,35 @@ body {
 
 
 .main-email {
-  background-color: lightskyblue;
+  background-color: lightsalmon;
+  width: 400px;
 }
 .email-input-button {
   display: flex;
   flex-flow: row nowrap;
+}
+.promotion {
+  display: block;
+  
+}
 
+
+
+/* 모바일 디바이스 */
+@media (max-width: 768px) {
+  .email-add {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .email-add input {
+    width: 100%;
+    border-radius: 50px;
+    border: 0;
+  }
+  .free-button {
+    width: 210px;
+    border-radius: 50px;
+  }
 }

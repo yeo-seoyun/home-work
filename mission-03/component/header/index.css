@@ -5,7 +5,7 @@
 }
 
 .header-inner {
-  width: 1280px;
+  width: 80%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -18,4 +18,12 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 190px;
+}
+
+
+/* 모바일 디바이스 */
+@media (max-width: 768px) {
+  .header-inner {
+    width: 100%;
+  }
 }
